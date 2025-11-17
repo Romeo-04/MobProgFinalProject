@@ -18,4 +18,7 @@ interface MenuItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(menuItems: List<MenuItem>)
 
+    @Query("SELECT COUNT(*) FROM menu_items")
+    suspend fun getMenuItemCount(): Int
+
 }
