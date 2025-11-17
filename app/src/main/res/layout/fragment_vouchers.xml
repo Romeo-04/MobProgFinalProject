@@ -19,7 +19,7 @@
 
         <!-- Empty State -->
         <TextView
-            android:id="@+id/tvEmptyMessage"
+            android:id="@+id/tvEmptyVouchers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No vouchers available"
