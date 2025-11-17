@@ -1,30 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:aapt="http://schemas.android.com/aapt"
     android:width="108dp"
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-    <path android:pathData="M31,63.928c0,0 6.4,-11 12.1,-13.1c7.2,-2.6 26,-1.4 26,-1.4l38.1,38.1L107,108.928l-32,-1L31,63.928z">
-        <aapt:attr name="android:fillColor">
-            <gradient
-                android:endX="85.84757"
-                android:endY="92.4963"
-                android:startX="42.9492"
-                android:startY="49.59793"
-                android:type="linear">
-                <item
-                    android:color="#44000000"
-                    android:offset="0.0" />
-                <item
-                    android:color="#00000000"
-                    android:offset="1.0" />
-            </gradient>
-        </aapt:attr>
-    </path>
+    <!-- Restaurant/Food icon for Pandog app -->
     <path
-        android:fillColor="#FFFFFF"
-        android:fillType="nonZero"
-        android:pathData="M65.3,45.828l3.8,-6.6c0.2,-0.4 0.1,-0.9 -0.3,-1.1c-0.4,-0.2 -0.9,-0.1 -1.1,0.3l-3.9,6.7c-6.3,-2.8 -13.4,-2.8 -19.7,0l-3.9,-6.7c-0.2,-0.4 -0.7,-0.5 -1.1,-0.3C38.8,38.328 38.7,38.828 38.9,39.228l3.8,6.6C36.2,49.428 31.7,56.028 31,63.928h46C76.3,56.028 71.8,49.428 65.3,45.828zM43.4,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2c-0.3,-0.7 -0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C45.3,56.528 44.5,57.328 43.4,57.328L43.4,57.328zM64.6,57.328c-0.8,0 -1.5,-0.5 -1.8,-1.2s-0.1,-1.5 0.4,-2.1c0.5,-0.5 1.4,-0.7 2.1,-0.4c0.7,0.3 1.2,1 1.2,1.8C66.5,56.528 65.6,57.328 64.6,57.328L64.6,57.328z"
-        android:strokeWidth="1"
-        android:strokeColor="#00000000" />
+        android:fillColor="#000000"
+        android:pathData="M42,20C42,18.895 42.895,18 44,18C45.105,18 46,18.895 46,20V38H48V20C48,18.895 48.895,18 50,18C51.105,18 52,18.895 52,20V38H54V20C54,18.895 54.895,18 56,18C57.105,18 58,18.895 58,20V42C58,46.418 54.418,50 50,50V88C50,89.105 49.105,90 48,90C46.895,90 46,89.105 46,88V50C41.582,50 38,46.418 38,42V20C38,18.895 38.895,18 40,18C41.105,18 42,18.895 42,20V38H44V20Z"/>
+    <path
+        android:fillColor="#000000"
+        android:pathData="M62,18C63.105,18 64,18.895 64,20V44H66V20C66,18.895 66.895,18 68,18C69.105,18 70,18.895 70,20V88C70,89.105 69.105,90 68,90C66.895,90 66,89.105 66,88V48H64V88C64,89.105 63.105,90 62,90C60.895,90 60,89.105 60,88V20C60,18.895 60.895,18 62,18Z"/>
 </vector>
