@@ -23,6 +23,7 @@ class ProfileFragment : Fragment() {
     private lateinit var tvPhone: TextView
     private lateinit var btnEditProfile: Button
     private lateinit var btnLogout: Button
+    private lateinit var bigUsername: TextView
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -40,6 +41,7 @@ class ProfileFragment : Fragment() {
         tvPhone = view.findViewById(R.id.tvProfilePhone)
         btnEditProfile = view.findViewById(R.id.btnEditProfile)
         btnLogout = view.findViewById(R.id.btnLogout)
+        bigUsername = view.findViewById(R.id.bigUsernameInProfile)
 
         loadUserProfile()
 
@@ -60,6 +62,7 @@ class ProfileFragment : Fragment() {
             val user = db.userDao().getUserById(userId)
             activity?.runOnUiThread {
                 if (user != null) {
+                    bigUsername.text = user.fullName
                     tvName.text = user.fullName
                     tvEmail.text = user.email
                     tvPhone.text = user.mobileNumber
