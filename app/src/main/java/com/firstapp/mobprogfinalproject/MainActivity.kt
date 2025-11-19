@@ -139,30 +139,101 @@ class MainActivity : AppCompatActivity() {
 
             // Seed vouchers
             val existingVouchers = db.voucherDao().getVoucherCount()
-            if (existingVouchers == 0) {
-                val sampleVouchers = listOf(
-                    Voucher(
-                        code = "WELCOME10",
-                        description = "Welcome discount for new customers",
-                        discountPercentage = 0.10,
-                        expiryDate = System.currentTimeMillis() + (30L * 24 * 60 * 60 * 1000), // 30 days
-                        isActive = true
-                    ),
-                    Voucher(
-                        code = "SILOG15",
-                        description = "15% off on all Silog meals",
-                        discountPercentage = 0.15,
-                        expiryDate = System.currentTimeMillis() + (60L * 24 * 60 * 60 * 1000), // 60 days
-                        isActive = true
-                    ),
-                    Voucher(
-                        code = "PANDOG20",
-                        description = "20% off on orders above ₱200",
-                        discountPercentage = 0.20,
-                        expiryDate = System.currentTimeMillis() + (90L * 24 * 60 * 60 * 1000), // 90 days
-                        isActive = true
-                    )
+            val sampleVouchers = listOf(
+                Voucher(
+                    code = "WELCOME10",
+                    description = "Welcome discount for new customers",
+                    discountPercentage = 0.10,
+                    expiryDate = System.currentTimeMillis() + (30L * 24 * 60 * 60 * 1000), // 30 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "SILOG15",
+                    description = "15% off on all Silog meals",
+                    discountPercentage = 0.15,
+                    expiryDate = System.currentTimeMillis() + (60L * 24 * 60 * 60 * 1000), // 60 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "PANDOG20",
+                    description = "20% off on orders above ₱200",
+                    discountPercentage = 0.20,
+                    expiryDate = System.currentTimeMillis() + (90L * 24 * 60 * 60 * 1000), // 90 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "SILOG20",
+                    description = "20% off on any Silog meal",
+                    discountPercentage = 0.20,
+                    expiryDate = System.currentTimeMillis() + (45L * 24 * 60 * 60 * 1000), // 45 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "TAPSI10",
+                    description = "10% off on Tapsilog orders",
+                    discountPercentage = 0.10,
+                    expiryDate = System.currentTimeMillis() + (30L * 24 * 60 * 60 * 1000), // 30 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "COMBOFRIES15",
+                    description = "15% off when you order any Silog + Fries",
+                    discountPercentage = 0.15,
+                    expiryDate = System.currentTimeMillis() + (25L * 24 * 60 * 60 * 1000), // 25 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "SNACKS15",
+                    description = "15% off all Snack items (Burger, Hotdog Sandwich, Fries)",
+                    discountPercentage = 0.15,
+                    expiryDate = System.currentTimeMillis() + (50L * 24 * 60 * 60 * 1000), // 50 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "BURGER30",
+                    description = "30% off on all Burger orders",
+                    discountPercentage = 0.30,
+                    expiryDate = System.currentTimeMillis() + (20L * 24 * 60 * 60 * 1000), // 20 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "DRINKS12",
+                    description = "12% off on all drinks (Iced Coffee, Gulaman, Water)",
+                    discountPercentage = 0.12,
+                    expiryDate = System.currentTimeMillis() + (40L * 24 * 60 * 60 * 1000), // 40 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "COFFEE25",
+                    description = "25% off on Iced Coffee orders",
+                    discountPercentage = 0.25,
+                    expiryDate = System.currentTimeMillis() + (35L * 24 * 60 * 60 * 1000), // 35 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "MERIENDA10",
+                    description = "10% off on Snack items (Burger, Hotdog Sandwich, Fries) from 2 PM to 5 PM",
+                    discountPercentage = 0.10,
+                    expiryDate = System.currentTimeMillis() + (60L * 24 * 60 * 60 * 1000), // 60 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "HOTDOG12",
+                    description = "12% off on Hotsilog or Hotdog Sandwich",
+                    discountPercentage = 0.12,
+                    expiryDate = System.currentTimeMillis() + (25L * 24 * 60 * 60 * 1000), // 25 days
+                    isActive = true
+                ),
+                Voucher(
+                    code = "HYDRATE8",
+                    description = "8% off on all drinks with any meal purchase",
+                    discountPercentage = 0.08,
+                    expiryDate = System.currentTimeMillis() + (55L * 24 * 60 * 60 * 1000), // 55 days
+                    isActive = true
                 )
+            )
+
+            if (existingVouchers != sampleVouchers.count()) {
                 db.voucherDao().insertAll(sampleVouchers)
             }
         }
