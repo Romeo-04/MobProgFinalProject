@@ -18,7 +18,7 @@
     <TextView
         android:id="@+id/tvEmptyCart"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="Your cart is empty"
         android:textSize="16sp"
         android:textColor="@color/gray800"
@@ -27,38 +27,38 @@
         android:visibility="gone"/>
 
     <!-- Cart Summary -->
-    <LinearLayout 
+    <LinearLayout
         android:id="@+id/cartSummary"
-        android:layout_width="match_parent" 
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" 
-        android:padding="16dp"
         android:background="@color/white"
-        android:elevation="8dp">
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="16dp">
 
         <!-- Subtotal -->
-        <LinearLayout 
-            android:layout_width="match_parent" 
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_marginBottom="8dp">
-            
-            <TextView 
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <TextView
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_height="wrap_content"
                 android:text="Subtotal"
-                android:textSize="16sp"
-                android:textColor="@color/black"/>
-            
-            <TextView 
-                android:id="@+id/tvCartTotal" 
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="₱0.00"
-                android:textSize="18sp"
                 android:textColor="@color/black"
-                android:fontFamily="sans-serif-bold"/>
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvCartTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-bold"
+                android:text="₱0.00"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
         </LinearLayout>
 
         <!-- Buttons -->
@@ -67,17 +67,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button 
-                android:id="@+id/btnCheckout" 
+            <Button
+                android:id="@+id/btnCheckout"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="56dp"
-                android:text="Checkout"
+                android:layout_weight="1"
                 android:background="@drawable/btn_black_round"
-                android:textColor="@color/white"
-                android:textSize="16sp"
                 android:fontFamily="sans-serif-medium"
-                android:textAllCaps="false"/>
+                android:text="Checkout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

@@ -30,11 +30,14 @@
 
                 <!-- Profile Icon -->
                 <View
+                    android:elevation="2dp"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:background="@drawable/btn_black_round"/>
+                    android:background="@drawable/black_circle"
+                    android:foreground="@drawable/ic_person"/>
 
                 <TextView
+                    android:id="@+id/bigUsernameInProfile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="User Profile"
@@ -164,7 +167,7 @@
             android:layout_height="56dp"
             android:text="Logout"
             android:background="@drawable/btn_outline_round"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:fontFamily="sans-serif-medium"
             android:textAllCaps="false"/>
